@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const WorkboxWebPackPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
@@ -38,6 +39,7 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
+    new CleanWebpackPlugin(['build']),
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
