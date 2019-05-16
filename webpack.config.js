@@ -39,7 +39,7 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    new CleanWebpackPlugin(['build']),
+    // new CleanWebpackPlugin({ }),
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
