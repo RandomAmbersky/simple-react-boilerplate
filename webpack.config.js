@@ -1,7 +1,7 @@
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const WorkboxWebPackPlugin = require('workbox-webpack-plugin');
+const path = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const WorkboxWebPackPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -39,7 +39,7 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    // new CleanWebpackPlugin({ }),
+    new CleanWebpackPlugin({}),
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
