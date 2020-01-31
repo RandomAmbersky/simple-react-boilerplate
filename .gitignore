@@ -5,3 +5,4 @@ build/
 # Dependency directories
 node_modules/
 yarn.lock
+/.idea
